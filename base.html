@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>To-do List</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<div class="list-container">
+			<h2>My To-do List</h2>
+			<ul id="list"></ul>
+			<form onsubmit="addTodo(); return false">
+				<label for="new-todo">New Item: </label>
+				<input
+					type="text"
+					id="new-todo"
+					name="new-todo"
+					placeholder="Waddya gotta do, bud?" />
+				<button type="submit">Create</button>
+			</form>
+		</div>
+		<script src="todo.js"></script>
+	</body>
+</html>
+
+<!--
+This just creates a new list. I did something a little different with mine than what he did with his.
+I made mine so that clicking the button OR hitting enter will add a new list item. If you look at 
+everything within the </form> tag, I added the onsubmit portion as well as removed the portion he had in
+the </button> tag. His </form> tag read like this:
+
+<form>
+    <label for="new-todo">New Item: </label>
+    <input 
+        type="text" 
+        id="new-todo" 
+        name="new-todo" />
+    <button type="button" onclick="addTodo()">Create</button>
+</form>
+
+While this works, it does exactly what it says. It only allows the button to be clicked. It does not allow
+the user to hit enter which is a lot of people's natural habits. In fact, hitting enter cleared the screen
+of all prior created list items. What I'm saying is it would actually be highly inconvenient. I believe 
+this way works way better.
+-->
