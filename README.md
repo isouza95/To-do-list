@@ -12,10 +12,9 @@ JavaScript, HTML, CSS
 
 ### How to run
 
-Step 1: Open up base.html  
-Step 2: Run in live server  
-Step 3: Start adding in new list items.  
-Step 4: Once item is entered and then completed, click on the list item to remove it.
+Step 1: Open up index.html using the link.  
+Step 2: Start adding in new list items.  
+Step 3: Once item is entered and then completed, click on the list item to remove it.
 
 ### What I learned
 
